@@ -1,41 +1,24 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Selections</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Selections</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
-      <ion-list>
-        <ion-item-sliding v-for="item in items">
-          <ion-item>
-            <ion-label>Sliding Item with End Options</ion-label>
-          </ion-item>
-
-          <ion-item-options>
-            <ion-item-option color="danger">Delete</ion-item-option>
-          </ion-item-options>
-        </ion-item-sliding>
-      </ion-list>
-    </ion-content>
-  </ion-page>
+	<MenuList 
+		title="Selections"
+		:items="items"
+		slide-variant="danger"
+		slide-wording="Delete"
+	/>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
+	import { defineComponent } from 'vue';
+	import MenuList from '@/components/MenuList.vue';
 
-  export default defineComponent({
-    data() {
-      return { 
-        items: [{}, {}]
-      }
-    },
-  });
+	export default defineComponent({
+		components: {
+			MenuList,
+		},
+		data() {
+			return { 
+				items: [{name: 'test'}, {name: 'test2'}]
+			}
+		},
+	});
 </script>

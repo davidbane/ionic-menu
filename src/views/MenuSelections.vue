@@ -1,9 +1,9 @@
 <template>
 	<MenuList 
-		title="Selections"
-		:items="items"
-		slide-variant="danger"
-		slide-wording="Delete"
+    title="Selections"
+    :items="items"
+    slide-variant="danger"
+    slide-wording="Delete"
 	/>
 </template>
 

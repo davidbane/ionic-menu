@@ -12,12 +12,21 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Menu" />
+      <ion-item v-for="item in items">
+        <ion-label>Basic Item</ion-label>
+      </ion-item>
     </ion-content>
   </ion-page>
 </template>
 
-<script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  
+  export default defineComponent({
+    data() {
+      return { 
+        items: [{}, {}]
+      }
+    },
+  });
 </script>

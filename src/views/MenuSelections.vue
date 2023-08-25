@@ -1,5 +1,5 @@
 <template>
-	<MenuList 
+	<SlidingMenuList 
     title="Selections"
     :items="items"
     slide-variant="danger"
@@ -9,11 +9,11 @@
 
 <script lang="ts">
 	import { defineComponent } from 'vue';
-	import MenuList from '@/components/MenuList.vue';
+	import SlidingMenuList from '@/components/SlidingMenuList.vue';
 
 	export default defineComponent({
 		components: {
-			MenuList,
+			SlidingMenuList,
 		},
 		data() {
 			return { 

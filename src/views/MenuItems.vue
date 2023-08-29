@@ -1,6 +1,6 @@
 <template>
 	<SlidingMenuList 
-    title="Menu"
+    title="Dishes"
     :items="items"
     slide-variant="success"
     slide-wording="Select"

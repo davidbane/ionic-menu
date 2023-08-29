@@ -1,6 +1,6 @@
 <template>
 	<ClickMenuList 
-    title="Categories"
+    title="Menu"
     :items="items"
 	/>
 </template>

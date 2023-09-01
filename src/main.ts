@@ -14,7 +14,8 @@ import {
   IonItemSliding,
   IonItem,
   IonItemOption,
-  IonList 
+  IonList,
+  IonIcon,
 } from '@ionic/vue';
 
 /* Core CSS required for Ionic components to work properly */
@@ -51,6 +52,7 @@ app.component('ion-item-sliding', IonItemSliding);
 app.component('ion-item', IonItem);
 app.component('ion-item-option', IonItemOption);
 app.component('ion-list', IonList);
+app.component('ion-icon', IonIcon,);
   
 router.isReady().then(() => {
   app.mount('#app');

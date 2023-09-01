@@ -1,9 +1,9 @@
 <template>
 	<SlidingMenuList 
-    title="Selections"
+    title="Dishes"
     :items="items"
-    slide-variant="danger"
-    slide-wording="Delete"
+    slide-variant="success"
+    slide-wording="Select"
 	/>
 </template>
 
@@ -18,12 +18,12 @@
 		},
 		data() {
 			return { 
-				items: [{name: 'test'}, {name: 'test2'}]
+				items: [{name: 'menu1'}, {name: 'menu2'}]
 			}
 		},
 		async mounted() {
 			const toast = await toastController.create({
-          message: 'Slide items to remove from selections.',
+          message: 'Slide items to quickly select.',
           duration: 3000,
           position: 'top',
 					color: 'warning'
